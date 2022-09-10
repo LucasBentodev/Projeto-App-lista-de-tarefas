@@ -34,6 +34,11 @@ private Date updateAt;
         this.createdAt = createdAt;
         this.updateAt = updateAt;
     }
+    
+    
+    public tasks(){
+        this.createdAt = new Date();
+    }
 
     public int getId() {
         return id;
@@ -75,7 +80,7 @@ private Date updateAt;
         this.notes = notes;
     }
 
-    public boolean isCompleted() {
+    public boolean getCompleted() {
         return completed;
     }
 
